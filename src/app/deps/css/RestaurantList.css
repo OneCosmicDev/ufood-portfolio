@@ -1,0 +1,10 @@
+.visit-button-custom {
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.visit-button-custom:hover {
+    transform: translateY(-1px);
+}

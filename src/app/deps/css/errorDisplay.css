@@ -1,0 +1,17 @@
+.error-icon-large {
+    font-size: 6rem;
+}
+
+.error-icon-medium {
+    font-size: 4rem;
+}
+
+.error-message-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-message-container-small {
+    max-width: 500px;
+}
+

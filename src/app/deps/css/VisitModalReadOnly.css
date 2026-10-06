@@ -1,0 +1,36 @@
+.visit-modal-star {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: default;
+    border: 1px solid #ffc107;
+    border-radius: 0.375rem;
+    flex-shrink: 0;
+}
+
+.visit-modal-star-selected {
+    background-color: #ffc107;
+}
+
+.visit-modal-star-unselected {
+    background-color: transparent;
+}
+
+.visit-modal-rating-text {
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--bs-body-color);
+}
+
+.visit-modal-textarea {
+    resize: none;
+}
+
+@media (max-width: 576px) {
+    .visit-modal-rating-text {
+        margin-top: 0.25rem;
+        margin-left: 0;
+    }
+}

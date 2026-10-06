@@ -1,0 +1,11 @@
+.index-hero-logo {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+}
+
+.restaurant-filters .form-control,
+.restaurant-filters .form-select {
+    min-height: 3rem;
+    border-radius: 0.75rem;
+}

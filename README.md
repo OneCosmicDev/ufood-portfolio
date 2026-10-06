@@ -1,35 +1,42 @@
-# ufood
+# UFood — Découverte de restaurants
 
-Application de découverte de restaurants : recherche, visites, favoris et suivi des utilisateurs.
+J’ai participé au développement d’UFood dans le cadre du cours GLO-3102 à l’Université Laval. Avec mon équipe, j’ai travaillé sur une application qui aide à trouver un restaurant, à conserver ses bonnes adresses et à partager ses visites.
 
-**React · TypeScript · Jest · React Testing Library**
+**Université Laval · GLO-3102 · Automne 2025**
 
-Copie portfolio d’un projet scolaire de Juan José Castilla Manrique ([OneCosmicDev](https://github.com/OneCosmicDev)). Les contributions de l’équipe et le matériel fourni par le cours sont crédités ci-dessous.
+**Début documenté : 10 septembre 2025** — [repères chronologiques](PROVENANCE.md#repères-chronologiques)
 
-## Ma contribution — Juan José Castilla Manrique
+**Technologies : React · TypeScript · TanStack Query · Jest · React Testing Library**
 
-J'ai contribué au parcours de recherche, aux interactions entre utilisateurs et à la mise en place des tests du frontend React/TypeScript.
+## Ce que fait le projet
 
-- **Recherche de restaurants et filtres** : implémentation de la recherche par nom ou cuisine, des filtres par cuisine et prix, et adaptations de l'affichage des cartes sur mobile. [PR #19](https://github.com/GLO3102/ufood-a2025-team-02/pull/19).
-- **Interface bilingue** : ajout de traductions pour les filtres et les détails des restaurants, et correction de la conservation de la langue pendant la navigation. [PR #32](https://github.com/GLO3102/ufood-a2025-team-02/pull/32).
-- **Déclaration d'une visite** : ajout de la modale avec date, note et commentaire, de sa validation et des états de chargement et d'erreur, ainsi que de l'intégration côté frontend avec l'API. [PR #75](https://github.com/GLO3102/ufood-a2025-team-02/pull/75).
-- **Recherche et suivi d'utilisateurs** : intégration des appels API, hooks React et composants pour rechercher des utilisateurs, les suivre et consulter les listes de suivi. [PR #109](https://github.com/GLO3102/ufood-a2025-team-02/pull/109).
-- **Tests et intégration continue** : configuration de Jest, React Testing Library et GitHub Actions, puis ajout de tests de la page d'accueil, de la recherche et des filtres. [PR #104](https://github.com/GLO3102/ufood-a2025-team-02/pull/104), [#132](https://github.com/GLO3102/ufood-a2025-team-02/pull/132), [#133](https://github.com/GLO3102/ufood-a2025-team-02/pull/133).
+UFood regroupe la recherche de restaurants et le suivi des expériences des utilisateurs dans une même interface. L’application permet de filtrer les restaurants par cuisine ou par prix, de consulter leurs informations et leur localisation, d’enregistrer une visite avec une note et un commentaire, puis de gérer des listes de favoris. Elle comprend aussi des profils et des fonctions de suivi entre utilisateurs. Le frontend communique avec l’API fournie dans le cours.
 
-Ces éléments décrivent mon périmètre de contribution au projet collectif. Ils ne m'attribuent pas l'ensemble du frontend ni le backend fourni par le cours.
+## Ma contribution
 
-## Équipe et crédits
+J’ai surtout travaillé sur la recherche, les interactions entre utilisateurs et les tests du frontend.
 
-Les auteurs indiqués dans le README du projet sont William Blanchet Lafrenière, Dania Mahfoud, Juan José Castilla Manrique, Félix Bégin, Benjamin Drolet et Jordan Quist.
+- J’ai développé la recherche de restaurants, les filtres et plusieurs adaptations des cartes pour l’affichage mobile.
+- J’ai complété les traductions de plusieurs parcours et corrigé la conservation de la langue pendant la navigation.
+- J’ai intégré la déclaration d’une visite : formulaire, validation, appels API, chargement et messages d’erreur.
+- J’ai ajouté la recherche d’utilisateurs, le suivi et les listes d’abonnements, avec les hooks et les composants React associés.
+- J’ai configuré Jest, React Testing Library et l’exécution des tests dans GitHub Actions, puis écrit des tests de la page d’accueil, de la recherche et des filtres.
 
-Comptes présents dans l'historique : [VillyGH](https://github.com/VillyGH), [mhfdania](https://github.com/mhfdania), [OneCosmicDev](https://github.com/OneCosmicDev), [filou0307](https://github.com/filou0307), [BenjaminDrolet](https://github.com/BenjaminDrolet) et [joquist09](https://github.com/joquist09).
+Je détaille les fichiers et les références de mon travail dans [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
 
-Le projet s'appuie sur les ressources pédagogiques et l'API du cours GLO-3102. La PR #19 comprend aussi un commit de fusion de VillyGH ; l'intégration et les revues font partie du travail d'équipe.
+## Ce que j’ai appris
 
+J’ai appris à construire un parcours complet autour d’une API. Une action comme enregistrer une visite implique autant la validation du formulaire que la gestion des erreurs et la mise à jour des données affichées. Le travail sur le suivi d’utilisateurs m’a notamment amené à gérer l’invalidation du cache pour que l’interface reflète les changements.
 
-Les références de PR et de commits pointent vers les dépôts pédagogiques d’origine, dont l’accès peut être restreint. La présente copie possède son propre historique de publication.
+J’ai aussi renforcé ma pratique des tests de composants : simuler les dépendances, reproduire les interactions d’un utilisateur et vérifier le comportement attendu. Le travail en équipe m’a appris à intégrer mes changements dans des composants partagés et à tenir compte des commentaires de revue.
 
-## Démarrer le projet
+## Mon équipe et le cadre du cours
+
+J’ai réalisé ce projet avec William Blanchet Lafrenière, Dania Mahfoud, Félix Bégin, Benjamin Drolet et Jordan Quist. Leurs contributions font partie intégrante de l’application présentée ici.
+
+L’énoncé, les ressources pédagogiques et l’API proviennent du cours GLO-3102. Je présente mon travail sur le frontend en conservant ces crédits.
+
+## Lancer le projet
 
 Prérequis : Node.js 22.19 ou supérieur et npm.
 
@@ -45,10 +52,6 @@ npm test -- --runInBand
 npm run build
 ```
 
-## État de cette publication
+## État du projet
 
-Cette version présente le travail scolaire et ses limites. Elle ne correspond pas à un service hébergé ni à un engagement de maintenance. Voir [PROVENANCE.md](PROVENANCE.md) pour la source, les adaptations de publication et les références vers le code.
-
-## Vérifications du 6 octobre 2026
-
-Installation npm, compilation webpack et 149 tests Jest réussis (20 suites). Les parcours nécessitant l’API externe n’ont pas été testés en navigateur.
+Les **149 tests Jest passent** et le frontend compile avec webpack.
